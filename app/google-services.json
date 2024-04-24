@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "105953533124",
+    "project_id": "edugame-e567e",
+    "storage_bucket": "edugame-e567e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105953533124:android:4c2f0e95036a61de0dbd91",
+        "android_client_info": {
+          "package_name": "com.mikrodev.educap"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVJmZDXYHCKXVgwGd-EcTWd1ms0bZuioI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

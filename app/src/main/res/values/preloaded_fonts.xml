@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/caveat_brush</item>
+        <item>@font/heebo</item>
+        <item>@font/inknut_antiqua</item>
+        <item>@font/inter</item>
+        <item>@font/oleo_script_bold</item>
+        <item>@font/open_sans_bold</item>
+        <item>@font/open_sans_semibold</item>
+        <item>@font/palanquin_dark_bold</item>
+        <item>@font/pt_sans</item>
+        <item>@font/pt_sans_bold</item>
+        <item>@font/roboto_medium</item>
+    </array>
+</resources>

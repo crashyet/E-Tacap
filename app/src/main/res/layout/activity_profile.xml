@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@color/grey">
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView33"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="155dp"
+                android:layout_height="155dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/ellips_stroke" />
+
+            <View
+                android:id="@+id/photo_profil"
+                android:layout_width="147dp"
+                android:layout_height="148dp"
+                android:layout_alignBottom="@+id/view"
+                android:layout_alignTop="@+id/view"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/photo_profil" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Adhitya Putra"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_edit"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView18"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_edit_profil"
+                android:text="Edit"
+                android:textAllCaps="false"
+                android:textColor="@color/grey"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_edit"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/line_profile" />
+
+            <View
+                android:id="@+id/btn_privacy"
+                android:layout_width="120dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="30dp"
+                android:layout_below="@+id/line"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/p_privacy" />
+
+            <View
+                android:id="@+id/btn_security"
+                android:layout_width="128dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="30dp"
+                android:layout_below="@+id/btn_privacy"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/p_security" />
+
+            <View
+                android:id="@+id/btn_report"
+                android:layout_width="215dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="30dp"
+                android:layout_below="@+id/btn_security"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/p_report" />
+
+            <View
+                android:id="@+id/btn_support"
+                android:layout_width="128dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="30dp"
+                android:layout_below="@+id/btn_report"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/p_support" />
+
+            <View
+                android:id="@+id/btn_terms"
+                android:layout_width="235dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="30dp"
+                android:layout_below="@+id/btn_support"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/p_terms" />
+
+            <View
+                android:id="@+id/btn_about"
+                android:layout_width="139dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="40dp"
+                android:layout_below="@+id/btn_terms"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/p_about" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/imageView33"
+        android:layout_width="0dp"
+        android:layout_height="145dp"
+        android:layout_marginBottom="-60dp"
+        android:background="@drawable/rectangel_shadow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <View
+        android:id="@+id/artikel"
+        android:layout_width="45dp"
+        android:layout_height="60dp"
+        android:background="@drawable/artikel_null"
+        app:layout_constraintBottom_toBottomOf="@+id/home"
+        app:layout_constraintEnd_toStartOf="@+id/home"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/home"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ellips_home_null"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <View
+        android:id="@+id/profil"
+        android:layout_width="41dp"
+        android:layout_height="60dp"
+        android:background="@drawable/profil"
+        app:layout_constraintBottom_toBottomOf="@+id/home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/home" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

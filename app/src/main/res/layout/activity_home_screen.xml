@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".HomeScreenActivity">
+
+  <ScrollView
+      android:id="@+id/scrollView2"
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      app:layout_constraintBottom_toTopOf="@+id/imageView8"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+      <View
+          android:id="@+id/imageView4"
+          android:layout_width="wrap_content"
+          android:layout_height="180dp"
+          android:layout_marginTop="0dp"
+          android:background="@drawable/rectangle_orange10"
+          app:layout_constraintTop_toTopOf="parent"
+          tools:layout_editor_absoluteX="0dp" />
+
+      <TextView
+          android:id="@+id/textView8"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentTop="true"
+          android:layout_marginStart="20dp"
+          android:layout_marginTop="15dp"
+          android:fontFamily="@font/inknut_antiqua"
+          android:text="Hello!"
+          android:textColor="@color/black"
+          android:textSize="30sp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+          android:id="@+id/textView11"
+          android:layout_width="154dp"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/textView8"
+          android:layout_alignStart="@+id/textView8"
+          android:layout_marginStart="0dp"
+          android:layout_marginTop="-15dp"
+          android:fontFamily="@font/inter"
+          android:text="We hope you enjoy the existing features!"
+          android:textColor="@color/black"
+          android:textSize="14sp" />
+
+      <ImageView
+          android:id="@+id/imageView6"
+          android:layout_width="120dp"
+          android:layout_height="140dp"
+          android:layout_alignTop="@+id/imageView4"
+          android:layout_alignBottom="@+id/imageView4"
+          android:layout_alignParentEnd="true"
+          android:layout_marginTop="20dp"
+          android:layout_marginEnd="20dp"
+          android:layout_marginBottom="20dp"
+          app:srcCompat="@drawable/human_outline" />
+
+      <TextView
+          android:id="@+id/textView12"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/imageView4"
+          android:layout_alignParentStart="true"
+          android:layout_marginStart="20dp"
+          android:layout_marginTop="20dp"
+          android:fontFamily="@font/open_sans_bold"
+          android:text="Games"
+          android:textColor="@color/black"
+          android:textSize="25sp"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/textView13"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/textView12"
+          android:layout_alignStart="@+id/textView12"
+          android:layout_marginStart="0dp"
+          android:layout_marginTop="0dp"
+          android:fontFamily="@font/open_sans_semibold"
+          android:letterSpacing="-0.06"
+          android:text="Play the games to sharpen your mind"
+          android:textColor="#CC000000"
+          android:textSize="15sp" />
+
+      <HorizontalScrollView
+          android:id="@+id/horizontalScrollView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/textView13"
+          android:layout_marginTop="30dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+          <View
+              android:id="@+id/game_puzzle"
+              android:layout_width="130dp"
+              android:layout_height="130dp"
+              android:layout_marginStart="20dp"
+              android:background="@drawable/game_puzzle" />
+
+          <View
+              android:id="@+id/game_quiz"
+              android:layout_width="130dp"
+              android:layout_height="130dp"
+              android:layout_marginStart="20dp"
+              android:layout_toEndOf="@+id/game_puzzle"
+              android:background="@drawable/game_quiz" />
+
+          <View
+              android:id="@+id/game_word"
+              android:layout_width="130dp"
+              android:layout_height="130dp"
+              android:layout_marginStart="20dp"
+              android:layout_marginEnd="20dp"
+              android:layout_toEndOf="@+id/game_quiz"
+              android:background="@drawable/game_word" />
+
+        </RelativeLayout>
+
+      </HorizontalScrollView>
+
+      <TextView
+          android:id="@+id/textView14"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/horizontalScrollView"
+          android:layout_alignParentStart="true"
+          android:layout_marginStart="20dp"
+          android:layout_marginTop="30dp"
+          android:fontFamily="@font/open_sans_bold"
+          android:text="Video"
+          android:textColor="@color/black"
+          android:textSize="25sp"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/textView15"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/textView14"
+          android:layout_alignStart="@+id/textView14"
+          android:layout_marginStart="0dp"
+          android:layout_marginTop="0dp"
+          android:fontFamily="@font/open_sans_semibold"
+          android:letterSpacing="-0.08"
+          android:text="Get the information about various tourism and culture"
+          android:textColor="#CC000000"
+          android:textSize="15sp" />
+
+      <HorizontalScrollView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/textView15"
+          android:layout_marginTop="30dp"
+          android:layout_marginBottom="40dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+          <View
+              android:id="@+id/btn_vid1"
+              android:layout_width="150dp"
+              android:layout_height="180dp"
+              android:layout_marginStart="20dp"
+              android:background="@drawable/selok" />
+
+          <View
+              android:id="@+id/btn_vid2"
+              android:layout_width="150dp"
+              android:layout_height="180dp"
+              android:layout_marginStart="20dp"
+              android:layout_toEndOf="@+id/btn_vid1"
+              android:background="@drawable/cemara" />
+
+          <View
+              android:id="@+id/btn_vid3"
+              android:layout_width="150dp"
+              android:layout_height="180dp"
+              android:layout_marginStart="20dp"
+              android:layout_toEndOf="@+id/btn_vid2"
+              android:background="@drawable/bunton" />
+
+          <View
+              android:id="@+id/btn_vid4"
+              android:layout_width="150dp"
+              android:layout_height="180dp"
+              android:layout_marginStart="20dp"
+              android:layout_toEndOf="@+id/btn_vid3"
+              android:background="@drawable/sodong" />
+
+          <View
+              android:id="@+id/btn_vid5"
+              android:layout_width="150dp"
+              android:layout_height="180dp"
+              android:layout_marginStart="20dp"
+              android:layout_toEndOf="@+id/btn_vid4"
+              android:background="@drawable/video1" />
+
+          <View
+              android:id="@+id/btn_vid6"
+              android:layout_width="150dp"
+              android:layout_height="180dp"
+              android:layout_marginStart="20dp"
+              android:layout_toEndOf="@+id/btn_vid5"
+              android:background="@drawable/video3" />
+
+          <View
+              android:id="@+id/btn_vid7"
+              android:layout_width="150dp"
+              android:layout_height="180dp"
+              android:layout_marginStart="20dp"
+              android:layout_toEndOf="@+id/btn_vid6"
+              android:layout_marginEnd="20dp"
+              android:background="@drawable/alun" />
+
+        </RelativeLayout>
+
+      </HorizontalScrollView>
+
+    </RelativeLayout>
+
+  </ScrollView>
+
+  <View
+      android:id="@+id/imageView8"
+      android:layout_width="0dp"
+      android:layout_height="145dp"
+      android:layout_marginBottom="-60dp"
+      android:background="@drawable/rectangel_shadow"
+      app:layout_constraintBottom_toBottomOf="parent"
+      tools:ignore="MissingConstraints"
+      tools:layout_editor_absoluteX="0dp" />
+
+  <View
+      android:id="@+id/artikel"
+      android:layout_width="45dp"
+      android:layout_height="60dp"
+      android:background="@drawable/artikel_null"
+      app:layout_constraintBottom_toBottomOf="@+id/home"
+      app:layout_constraintEnd_toStartOf="@+id/home"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <View
+      android:id="@+id/home"
+      android:layout_width="80dp"
+      android:layout_height="100dp"
+      android:background="@drawable/ellips_home"
+      android:layout_marginBottom="10dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"/>
+
+  <View
+      android:id="@+id/profil"
+      android:layout_width="41dp"
+      android:layout_height="60dp"
+      android:background="@drawable/profil_null"
+      app:layout_constraintBottom_toBottomOf="@+id/home"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/home" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
